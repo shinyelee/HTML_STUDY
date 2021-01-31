@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.container {
+	width: 600px;
+	height: 600px;
+	background-color: skyblue;
+	position: relative;
+	top: 10px;
+	left: 10px;
+}
+.one {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	position: absolute;
+	margin: -50px;
+	top: 50%;
+	left: 50%;
+}
+.two {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="one"></div>
+		<div class="two"></div>
+	</div>
+	
+	<p>
+		위치 기준점 정할 때<br>
+		absolute는 절대<br>
+		relative는 상대
+	</p>
+	
+	<p>
+		.center {<br>
+		width: 100px;<br>
+		height: 100px;<br>
+		background-color: yellow;<br>
+		position: absolute;<br>
+		top: 0;<br>
+		bottom: 0;<br>
+		left: 0;<br>
+		right: 0;<br>
+		margin: auto;<br>
+		}<br>
+		이런 식으로 설정하면 화면 크기에 맞춰서 가운데로 자동정렬됨
+	</p>
+</body>
+</html>
