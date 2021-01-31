@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+* {color: white;}
+.one {
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	padding: 20px;
+	border: solid 20px black;
+}
+.two {
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	padding: 20px;
+	border: solid 20px black;
+	box-sizing: border-box;
+}
+.three {
+	width: 200px;
+	height: 200px;
+	background-color: green;
+	margin: 20px;
+	border: solid 20px black;
+	border-radius: 20px;
+}
+.four {
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	border: solid 20px black;
+	opacity: 0.5;
+}
+.five {
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+	border: dotted 20px black;
+}
+</style>
+</head>
+<body>
+	<div class="one">
+		padding 20px<br>
+		때문에 넓어짐<br>
+		(200+20)*(200+20)
+	</div>
+	
+	<div class="two">
+		사각형이 넓어지는게 싫다면?<br>
+		box-sizing: border-box;로<br>
+		200*200 안에서 해결 가능
+	</div>
+	
+	<div class="three">
+		margin은 넓이에<br>
+		포함되지 않음<br>
+		radius 둥글게
+	</div>
+	
+	<div class="four">
+		padding, margin 미적용<br>
+		opacity 투명도
+	</div>
+	
+	<div class="five">
+		padding, margin 미적용<br>
+		dotted 점선
+	</div>
+	<p>border 속성은 이 외에도 double, dashed, groove, ridge, inset, outset 등 다양함</p>
+</body>
+</html>
