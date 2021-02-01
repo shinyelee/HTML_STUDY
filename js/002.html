@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+	var 변수하나 = 100;
+	변수하나 = 200;
+	document.write(변수하나 + 변수하나);
+	// 100+200 아니고 200+200임
+	// (변수를 처음에 100으로 정의했다가 나중에 200으로 바꾼 것으로 간주함)
+	document.write('<br>');
+	
+	var 변수둘 = '200';
+	document.write(변수둘 + 변수둘);
+	// 200은 숫자(이백), '200'은 문자(이영영)임
+	document.write('<br>');
+	
+	var name = 'shinyelee'
+	document.write(name[0]);
+	// shinyelee에서 첫번째(1이 아닌 0부터 시작) 문자 출력
+	// -> s h i n y e l e e
+	// -> 0 1 2 3 4 5 6 7 8
+	</script>
+</body>
+</html>
