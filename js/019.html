@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 class="one">hello world 1</h1>
+	<h1 class="one two">hello world 2</h1>
+	<h1 class="one two three" id="four">hello world 3</h1>
+	<h1>hello world 4</h1>
+	<h1>hello world 5</h1>
+	<h1>hello world 6</h1>
+		
+	<p>hello world</p>
+	<button id="two" onclick="f()">클릭!</button>
+	
+<!-- jQuery는 
+	 1. 엘리먼트를 선택할 수 있는 강력한 방법
+	 2. 선택된 엘리먼트를 효율적으로 제어할 수 있는 방법
+ -->
+<script 
+	src="https://code.jquery.com/jquery-3.5.1.js" 
+	integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+	crossorigin="anonymous">
+</script>
+
+<script >
+	$('#two').click(
+		function f() {
+			$('h1.one#four').html('반갑습니다');
+		}
+	);
+	// $('h1:first').html('반갑습니다')
+	// -> 첫 번째 h1만 '반갑습니다'로 바꿈.
+	// $('h1:last').html('반갑습니다')
+	// -> 마지막 h1만 '반갑습니다'로 바꿈.
+	
+	// 필터 예시
+	
+	// even(짝수) odd(홀수) first(처음) last(끝)
+	// nth-child(2) -> 두번째
+	// nth-child(2n) -> 짝수
+	
+	// $(#id) -> id만 선택
+	// $(.class) -> class만 선택
+	// $(h1.class) -> h1+class 선택
+	// $(h1.class#id) -> h1+class+id 선택
+</script>
+</body>
+</html>
