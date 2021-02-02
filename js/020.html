@@ -24,24 +24,15 @@
 <script >
 	$('#two').click(
 		function f() {
-			$('h1.one#four').html('반갑습니다');
+			// html -> 태그 적용O, 형광펜 효과
+			$('h1:first').html('<mark>반갑습니다</mark>').fadeOut(3000).fadeIn(3000);
+			// text -> 태그 적용X, 텍스트 처리
+			$('h1:last').text('<mark>반갑습니다</mark>');
 		}
 	);
-	// $('h1:first').html('반갑습니다')
-	// -> 첫 번째 h1만 '반갑습니다'로 바꿈.
-	// $('h1:last').html('반갑습니다')
-	// -> 마지막 h1만 '반갑습니다'로 바꿈.
 	
-	// 필터 예시
-	
-	// even(짝수) odd(홀수) first(처음) last(끝)
-	// nth-child(2) -> 두번째
-	// nth-child(2n) -> 짝수
-	
-	// $(#id) -> id만 선택
-	// $(.class) -> class만 선택
-	// $(h1.class) -> h1+class 선택
-	// $(h1.class#id) -> h1+class+id 선택
+	// 메서드 예시(속성값 변경, DOM 탐색, CSS, 이벤트, 효과 등)
+	// text html val hide show fadeIn fadeOut
 </script>
 </body>
 </html>
