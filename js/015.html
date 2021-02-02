@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="one">hello world</div>
+	<div class="one two" id="three">hello world two</div>
+	<div class="one two four">hello world three</div>
+	<script>
+	// 1. 단일 element를 반환하는 함수
+//	document.getElementById('id')
+//	document.querySelector('query')
+	// 2. elements를 반환하는 함수
+//	document.getElementsByName('name')
+//	document.getElementsByClassName('className')
+//	document.querySelectorAll('query')
+
+	k = document.getElementsByClassName('one');
+	console.log(k);
+	
+	document.write(k['0']['innerHTML']);
+	document.write('<br>');
+	
+	document.write(k['2']['className']);
+	document.write('<br>');
+	</script>
+</body>
+</html>
