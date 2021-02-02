@@ -7,7 +7,7 @@
 <body>
 	<h1 id="one">hello world</h1>
 	<p>hello world</p>
-	<button onclick="f()">클릭!</button>
+	<button id="two" onclick="f()">클릭!</button>
 	
 <!-- jQuery는 
 	 1. 엘리먼트를 선택할 수 있는 강력한 방법
@@ -20,10 +20,11 @@
 </script>
 
 <script >
-	function f() {
-		$('#one').html('반갑습니다');
-		document.getElementById('one').style.backgroundColor = 'yellow';
-	}
+	$('#two').click(
+		function f() {
+			$('p').html('반갑습니다');
+		}
+	);
 </script>
 </body>
 </html>
