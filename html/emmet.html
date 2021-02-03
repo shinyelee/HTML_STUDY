@@ -1,0 +1,66 @@
+<!-- emmet은 기본 명령어를 입력한 뒤 tab키를 눌러야 함. -->
+<!-- ! : html서식 자동완성 -->
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<!-- h1 : h1태그 자동완성. -->
+	<h1></h1>
+	<!-- h1+h2 : 동일한 레벨로 h1태그, h2태그 자동완성. -->
+	<h1></h1>
+	<h2></h2>
+	<!-- h2*3 : h2태그 3개 자동완성. -->
+	<h2></h2>
+	<h2></h2>
+	<h2></h2>
+	<!-- h1{hello world}*5 : hello world라는 내용의 h1태그 5개 자동완성. -->
+	<h1>hello world</h1>
+	<h1>hello world</h1>
+	<h1>hello world</h1>
+	<h1>hello world</h1>
+	<h1>hello world</h1>
+	
+	<!-- table>tr>td : table 태그 안에 tr 태그, tr 태그 안에 td 태그 자동완성. -->
+	<table>
+		<tr>
+			<td></td>
+		</tr>
+	</table>
+	<!-- table>(tr>th)*2+(tr>td)*2 : 묶어서 곱하기도 가능함. -->
+	<table>
+		<tr>
+			<th></th>
+		</tr>
+		<tr>
+			<th></th>
+		</tr>
+		<tr>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+		</tr>
+	</table>
+	
+	<!-- .one : .앞에 태그 없으면 div 태그가 기본값. -->
+	<div class="one"></div>
+	<!-- #two : .은 클래스, #은 아이디. -->
+	<div id="two"></div>
+	<!-- p.three.four#five : 섞어서도 사용 가능. -->
+	<p class="three four" id="five"></p>
+	
+	<!--  h$*3 : $값은 1부터 시작해 1씩 증가함. 여기선 3을 곱했으니 h1, h2, h3 태그 자동완성. -->
+	<h1></h1>
+	<h2></h2>
+	<h3></h3>
+	<!--  h1.test$*5 : 클래스 test1~5까지 자동완성. -->
+	<h1 class="test1"></h1>
+	<h1 class="test2"></h1>
+	<h1 class="test3"></h1>
+	<h1 class="test4"></h1>
+	<h1 class="test5"></h1>
+</body>
+</html>
