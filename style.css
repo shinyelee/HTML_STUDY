@@ -1,0 +1,26 @@
+.parents {
+  margin: 50px;
+}
+
+.block {
+  width: 200px;
+  height: 200px;
+  border: 5px solid hotpink;
+  background-color: pink;
+}
+
+.inline {
+  width: 200px;
+  height: 200px;
+  display: inline;
+  border: 5px solid skyblue;
+  background-color: powderblue;
+}
+
+.inline-block {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  border: 5px solid yellow;
+  background-color: lightgoldenrodyellow;
+}
