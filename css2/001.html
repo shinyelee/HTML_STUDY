@@ -4,41 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="001.css" />
     <title>(S)CSS Masterclass</title>
   </head>
   <body>
-    <h1>display:block</h1>
+    <h3>(default)</h3>
     <div class="parents">
       <div class="box block">높이,너비,마진,패딩 (O)</div>
       <div class="box block">세로로 나열</div>
       <div class="box block">자동 마진 (X)</div>
       <div class="box block">공간 부족 -> 변화 없음</div>
     </div>
-    <h1>display:inline</h1>
+    <h3>display:inline</h3>
     <div class="parents">
       <div class="box inline">높이,너비,마진,패딩 (X)</div>
       <div class="box inline">가로로 나열</div>
       <div class="box inline">자동 마진 (O)</div>
       <div class="box inline">공간 부족 -> 초과 글자 개행</div>
     </div>
-    <h1>display:inline-block</h1>
+    <h3>display:inline-block</h3>
     <div class="parents">
       <div class="box inline-block">높이,너비,마진,패딩 (O)</div>
       <div class="box inline-block">가로로 나열</div>
       <div class="box inline-block">자동 마진 (O)</div>
       <div class="box inline-block">공간 부족 -> 초과 블록 개행</div>
     </div>
-    <h1>display:flex</h1>
+    <h3>display:flex</h3>
     <div class="direct parents">
       <div class="box flex">높이,너비,마진,패딩 (O)</div>
       <div class="box flex">가로로 나열</div>
       <div class="box flex">자동 마진 (X)</div>
-      <div class="box flex">공간 부족 -> 너비 축소 + 글자 개행</div>
+      <div class="box flex">공간 부족 -> 너비 무시(축소) + 초과 글자 개행</div>
       <!-- 정렬하고자하는 블럭의 '직접적인 부모'에 선언해야 해당 블럭에 적용 가능.
       부모의 부모 (X) 남의 부모 (X) 자기 자신 (X) 자식 (X) -->
     </div>
-    <h1>float</h1>
+    <h3>float:left</h3>
     <div class="parents">
       <div class="box float">높이,너비,마진,패딩 (O)</div>
       <div class="box float">가로로 나열</div>
