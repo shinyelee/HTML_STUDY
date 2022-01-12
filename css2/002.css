@@ -1,0 +1,67 @@
+.bg {
+  margin: 5px 0;
+  display: flex;
+  border: 1px dashed black;
+}
+
+.box {
+  height: 50px;
+  width: 150px;
+}
+
+/* .fd-row-p {
+  flex-direction: row;
+  기본값이므로 굳이 안 써도 됨
+} */
+
+.fd-row,
+.fd-column {
+  border: 1px solid pink;
+  background-color: lavenderblush;
+}
+
+.fd-row-reverse-p {
+  flex-direction: row-reverse;
+}
+
+.fd-row-reverse,
+.fd-column-reverse {
+  border: 1px solid aquamarine;
+  background-color: mintcream;
+}
+
+.fd-column-p {
+  flex-direction: column;
+}
+
+.fd-column-reverse-p {
+  flex-direction: column-reverse;
+}
+
+/* .fw-nowrap-p {
+  flex-wrap: nowrap;
+  기본값이므로 굳이 안 써도 됨
+} */
+
+.fw-nowrap {
+  border: 1px solid mediumpurple;
+  background-color: lavender;
+}
+
+.fw-wrap-p {
+  flex-wrap: wrap;
+}
+
+.fw-wrap {
+  border: 1px solid yellow;
+  background-color: lightyellow;
+}
+
+.fw-wrap-reverse-p {
+  flex-wrap: wrap-reverse;
+}
+
+.fw-wrap-reverse {
+  border: 1px solid skyblue;
+  background-color: lightcyan;
+}
