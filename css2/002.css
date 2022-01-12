@@ -1,5 +1,7 @@
 .bg,
-.bg2 {
+.bg2,
+.bg3,
+.bg4 {
   margin: 10px 0;
   display: flex;
   border: 1px dashed black;
@@ -20,7 +22,10 @@
   기본값이므로 굳이 안 써도 됨
 } */
 
-.fd-row,
+.fd-column-p {
+  flex-direction: column;
+}
+
 .fd-column {
   border: 1px solid pink;
   background-color: lavenderblush;
@@ -30,29 +35,15 @@
   flex-direction: row-reverse;
 }
 
-.fd-row-reverse,
-.fd-column-reverse {
+.fd-row-reverse {
   border: 1px solid aquamarine;
   background-color: mintcream;
-}
-
-.fd-column-p {
-  flex-direction: column;
-}
-
-.fd-column-reverse-p {
-  flex-direction: column-reverse;
 }
 
 /* .fw-nowrap-p {
   flex-wrap: nowrap;
   기본값이므로 굳이 안 써도 됨
 } */
-
-.fw-nowrap {
-  border: 1px solid mediumpurple;
-  background-color: lavender;
-}
 
 .fw-wrap-p {
   flex-wrap: wrap;
@@ -70,10 +61,6 @@
 .fw-wrap-reverse {
   border: 1px solid skyblue;
   background-color: lightcyan;
-}
-
-.ff-columm-reverse-norwap-p {
-  flex-flow: column-reverse nowrap;
 }
 
 .ff-column-reverse-nowrap {
@@ -114,18 +101,62 @@
   background-color: paleturquoise;
 }
 
-/* . {
+/* .ai-stretch-p {
+  align-items: stretch;
+  기본값이므로 굳이 안 써도 됨
+  align-items: normal;
+  과 동일
+} */
+
+.ai-center-p {
+  align-items: center;
 }
 
-. {
+.ai-center {
+  border: 1px solid gainsboro;
+  background-color: whitesmoke;
+}
+
+.ai-end-p {
+  align-items: end;
+}
+
+.ai-end {
   border: 1px solid gold;
   background-color: ivory;
 }
 
-. {
+.bg3 {
+  height: 400px;
+  width: 400px;
+  flex-wrap: wrap;
 }
 
-. {
-  border: 1px solid gainsboro;
-  background-color: whitesmoke;
+.box3 {
+  height: 120px;
+  width: 120px;
+}
+
+/* .ac-stretch-p {
+  align-content: stretch;
+  기본값이므로 굳이 안 써도 됨
+  align-items와 동일한 케이스
 } */
+
+.ac-space-around-p {
+  align-content: space-around;
+}
+
+.ac-space-around {
+  border: 1px solid mediumpurple;
+  background-color: lavender;
+}
+
+.ac-start-p {
+  align-content: start;
+}
+
+.ac-start {
+  border: 1px solid powderblue;
+  background-color: azure;
+}
