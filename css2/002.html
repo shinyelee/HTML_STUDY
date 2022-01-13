@@ -53,45 +53,68 @@
     </div>
     <h1>justify-content</h1>
     <div class="jc-center-p bg1">
-      <div class="jc-center box">center는</div>
-      <div class="jc-center box">main axis 방향으로</div>
-      <div class="jc-center box">자식 가운데 정렬</div>
+      <div class="jc-center box">1 center는</div>
+      <div class="jc-center box">2 main axis 방향으로</div>
+      <div class="jc-center box">3 자식 가운데 정렬</div>
     </div>
     <div class="jc-space-between-p bg1">
-      <div class="jc-space-between box">space-between은</div>
-      <div class="jc-space-between box">main axis 방향으로</div>
-      <div class="jc-space-between box">자식 사이 빈 공간을 줌</div>
+      <div class="jc-space-between box">1 space-between은</div>
+      <div class="jc-space-between box">2 main axis 방향으로</div>
+      <div class="jc-space-between box">3 자식 사이 빈 공간을 줌</div>
     </div>
     <h1>align-items</h1>
     <!-- 부모의 높이가 없으면 아무런 변화가 일어나지 않음 -->
     <div class="ai-center-p bg1">
-      <div class="ai-center box">center는</div>
-      <div class="ai-center box">cross axis</div>
-      <div class="ai-center box">방향으로</div>
-      <div class="ai-center box">가운데</div>
-      <div class="ai-center box">정렬</div>
+      <div class="ai-center box">1 center는</div>
+      <div class="ai-center box">2 cross axis</div>
+      <div class="ai-center box">3 방향으로</div>
+      <div class="ai-center box">4 가운데</div>
+      <div class="ai-center box">5 정렬</div>
     </div>
     <div class="ai-end-p bg1">
-      <div class="ai-end box">end는 cross axis 방향으로</div>
-      <div class="ai-end box">부모가 끝나는 위치에 맞춰 정렬</div>
+      <div class="ai-end box">1 end는 cross axis 방향으로</div>
+      <div class="ai-end box">2 부모가 끝나는 위치에 맞춰 정렬</div>
     </div>
     <h1>align-content</h1>
-    <!-- align-items와 align-content의 기본값은 둘 다 stretch로 동일 -->
+    <!-- bg2는 flex-wrap: wrap; 적용 -->
     <div class="ac-space-around-p bg2">
-      <div class="ac-space-around box">space-around는</div>
-      <div class="ac-space-around box">cross axis 방향으로</div>
-      <div class="ac-space-around box">아이템 위아래에 동일한 공간을 줌</div>
-      <div class="ac-space-around box">space-around는</div>
-      <div class="ac-space-around box">cross axis 방향으로</div>
-      <div class="ac-space-around box">아이템 위아래에 동일한 공간을 줌</div>
+      <div class="ac-space-around box">1 space-around는</div>
+      <div class="ac-space-around box">2 cross axis 방향으로</div>
+      <div class="ac-space-around box">3 아이템 위아래에 동일한 공간을 줌</div>
+      <div class="ac-space-around box">4 space-around는</div>
+      <div class="ac-space-around box">5 cross axis 방향으로</div>
+      <div class="ac-space-around box">6 아이템 위아래에 동일한 공간을 줌</div>
     </div>
     <div class="ac-start-p bg2">
-      <div class="ac-start box">start는</div>
-      <div class="ac-start box">cross axis 방향으로</div>
-      <div class="ac-start box">시작 모서리에 배치함</div>
-      <div class="ac-start box">start는</div>
-      <div class="ac-start box">cross axis 방향으로</div>
-      <div class="ac-start box">시작 모서리에 배치함</div>
+      <div class="ac-start box">1 start는</div>
+      <div class="ac-start box">2 cross axis 방향으로</div>
+      <div class="ac-start box">3 시작 모서리에 배치함</div>
+      <div class="ac-start box">4 start는</div>
+      <div class="ac-start box">5 cross axis 방향으로</div>
+      <div class="ac-start box">6 시작 모서리에 배치함</div>
+    </div>
+    <h2>align-items:stretch;</h2>
+    <!-- align-items와 align-content의 기본값은 둘 다 stretch로 동일 -->
+    <div class="ai-stretch-p bg1">
+      <div class="ai-stretch box">height: auto;</div>
+      <div class="ai-stretch box">width: 100px;</div>
+      <div class="ai-stretch box">-> stretch O</div>
+    </div>
+    <div class="ai-stretch-p bg1">
+      <div class="ai-stretch2 box">height: 100px;</div>
+      <div class="ai-stretch2 box">width: 100px;</div>
+      <div class="ai-stretch2 box">-> stretch X</div>
+    </div>
+    <h2>align-content:stretch;</h2>
+    <div class="ac-stretch-p bg1">
+      <div class="ac-stretch box">height: 100px;</div>
+      <div class="ac-stretch box">width: autopx;</div>
+      <div class="ac-stretch box">-> stretch O</div>
+    </div>
+    <div class="ac-stretch-p bg1">
+      <div class="ac-stretch2 box">height: auto;</div>
+      <div class="ac-stretch2 box">width: auto;</div>
+      <div class="ac-stretch2 box">-> stretch X</div>
     </div>
   </body>
 </html>

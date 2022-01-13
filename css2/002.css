@@ -95,20 +95,13 @@
   background-color: paleturquoise;
 }
 
-/* .ai-stretch-p {
-  align-items: stretch;
-  기본값이므로 굳이 안 써도 됨
-  align-items: normal;
-  과 동일
-} */
-
 .ai-center-p {
   align-items: center;
 }
 
 .ai-center {
-  border: 1px solid gainsboro;
-  background-color: whitesmoke;
+  border: 1px solid gold;
+  background-color: ivory;
 }
 
 .ai-end-p {
@@ -116,23 +109,17 @@
 }
 
 .ai-end {
-  border: 1px solid gold;
-  background-color: ivory;
+  border: 1px solid mediumpurple;
+  background-color: lavender;
 }
-
-/* .ac-stretch-p {
-  align-content: stretch;
-  기본값이므로 굳이 안 써도 됨
-  align-items와 동일한 케이스
-} */
 
 .ac-space-around-p {
   align-content: space-around;
 }
 
 .ac-space-around {
-  border: 1px solid mediumpurple;
-  background-color: lavender;
+  border: 1px solid powderblue;
+  background-color: azure;
 }
 
 .ac-start-p {
@@ -140,6 +127,39 @@
 }
 
 .ac-start {
-  border: 1px solid powderblue;
-  background-color: azure;
+  border: 1px solid gainsboro;
+  background-color: whitesmoke;
+}
+
+.ai-stretch-p {
+  align-items: stretch;
+  align-items: normal;
+}
+
+.ai-stretch {
+  height: auto;
+  border: 1px solid darkkhaki;
+  background-color: beige;
+}
+
+.ai-stretch2 {
+  border: 1px solid mediumorchid;
+  background-color: thistle;
+}
+
+.ac-stretch-p {
+  align-content: stretch;
+}
+
+.ac-stretch {
+  width: auto;
+  border: 1px solid lightskyblue;
+  background-color: aliceblue;
+}
+
+.ac-stretch2 {
+  height: auto;
+  width: auto;
+  border: 1px solid burlywood;
+  background-color: oldlace;
 }
