@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="003.css" />
+    <title>Flex</title>
+  </head>
+  <body>
+    <h1>flex-basis</h1>
+    <!-- 전제조건 flex-direction:row; (기본값) -->
+    <!-- flex-direction:column;이면 가로세로 바뀜 -->
+    <div class="flex-basis-auto-p bg">
+      <div class="flex-basis-auto box">height: 100px; width: 100px;</div>
+      <div class="flex-basis-auto box">flex-basis: auto; (기본값)</div>
+      <div class="flex-basis-auto box">box의 width를 따름</div>
+    </div>
+    <div class="flex-basis-0-p bg">
+      <div class="flex-basis-0 box">height: 100px; width: 100px;</div>
+      <div class="flex-basis-0 box">flex-basis: 0; (최소화)</div>
+      <div class="flex-basis-0 box">width 최소화 + 강제 개행</div>
+    </div>
+    <div class="flex-basis-200px-p bg">
+      <div class="flex-basis-200px box">height: 100px; width: 100px;</div>
+      <div class="flex-basis-200px box">flex-basis: 200px;</div>
+      <div class="flex-basis-200px box">box width보다 flex-basis 우선</div>
+    </div>
+    <div class="flex-p bg">
+      <div class="flex1 box">flex: 1 1 0;</div>
+      <div class="flex2 box">flex: 2 1 0;</div>
+      <div class="flex3 box">flex: 1 1 0;</div>
+      <div class="flex4 box">flex: 2 1 0;</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+.bg {
+  height: 200px;
+  width: 600px;
+  margin: 10px 0;
+  display: flex;
+  border: 1px dashed black;
+}
+
+.box {
+  height: 125px;
+  width: 125px;
+  border: 1px solid white;
+}
+
+.flex-basis-auto {
+  /* flex-basis: auto; */
+  background-color: wheat;
+}
+
+.flex-basis-0 {
+  flex-basis: 0;
+  background-color: powderblue;
+}
+
+.flex-basis-200px {
+  flex-basis: 200px;
+  background-color: thistle;
+}
+
+.flex1,
+.flex3 {
+  flex: 1 1 0;
+  background-color: aquamarine;
+}
+.flex2,
+.flex4 {
+  flex: 2 1 0;
+  background-color: pink;
+}
