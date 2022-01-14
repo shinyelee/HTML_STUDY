@@ -1,0 +1,20 @@
+.father {
+  display: grid;
+  /* 순서대로 column 1번째 2번째 3번째 */
+  grid-template-columns: 250px 250px 250px;
+  /* 순서대로 row 1번째 2번째 3번째 */
+  grid-template-rows: 100px 50px 200px;
+  /* column-gap: 10px;
+  row-gap: 10px;
+  column-gap과 row-gap을 하나로 함게 표현 가능 */
+  gap: 10px;
+}
+
+.child {
+  background: peru;
+  color: white;
+  font-size: 50px; /* font-size가 box의 height에 관여함 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
