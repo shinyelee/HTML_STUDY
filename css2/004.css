@@ -1,20 +1,36 @@
-.father {
+.grid {
   display: grid;
-  /* 순서대로 column 1번째 2번째 3번째 */
-  grid-template-columns: 250px 250px 250px;
-  /* 순서대로 row 1번째 2번째 3번째 */
-  grid-template-rows: 100px 50px 200px;
-  /* column-gap: 10px;
-  row-gap: 10px;
-  column-gap과 row-gap을 하나로 함게 표현 가능 */
+  /* grid-template-columns: 200px 200px 200px 200px;
+  grid-template-columns: repeat(4, 200px); */
+  /* grid-template-columns: auto 200px auto auto; */
+  grid-template-columns: auto 200px;
+  /* grid-template-rows: 100px 200px 200px 100px; */
+  grid-template-rows: 100px repeat(2, 200px) 100px;
+  /* column-gap: 10px; row-gap: 10px; */
   gap: 10px;
+  grid-template-areas:
+    "header header header header"
+    "content content content nav"
+    "content content content nav"
+    "footer footer footer footer";
 }
 
-.child {
-  background: peru;
-  color: white;
-  font-size: 50px; /* font-size가 box의 height에 관여함 */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header {
+  background-color: springgreen;
+  grid-area: header;
+}
+
+.content {
+  background-color: deepskyblue;
+  grid-area: content;
+}
+
+.nav {
+  background-color: mediumpurple;
+  grid-area: nav;
+}
+
+.footer {
+  background-color: orange;
+  grid-area: footer;
 }
