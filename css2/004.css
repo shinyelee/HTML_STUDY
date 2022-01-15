@@ -12,8 +12,10 @@
 
 .content {
   background-color: deepskyblue;
-  grid-column: span 3;
-  grid-row: span 2;
+  /* grid-area: 시작row / 시작column / 끝row / 끝column; */
+  grid-area: 2 / 1 / 4 / 4;
+  /* grid-area: 시작row / 시작column / span row값 / span column값; */
+  /* grid-area: 2 / 1 / span 2 / span 3; */
 }
 
 .nav {
