@@ -1,8 +1,10 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 100px);
-  grid-template-rows: repeat(4, 100px);
   gap: 10px;
+  /* grid-template-columns: [line이름] 너비 ... [line이름] 너비; */
+  grid-template-columns: [first-line] 100px [second-line] 100px [third-line] 100px [fourth-line] 100px [fifth-line];
+  /* grid-template-rows: repeat(횟수, 너비 [line이름]); */
+  grid-template-rows: repeat(4, 100px [sexy-line]);
 }
 
 .header {
@@ -12,10 +14,13 @@
 
 .content {
   background-color: deepskyblue;
-  /* grid-area: 시작row / 시작column / 끝row / 끝column; */
-  grid-area: 2 / 1 / 4 / 4;
-  /* grid-area: 시작row / 시작column / span row값 / span column값; */
-  /* grid-area: 2 / 1 / span 2 / span 3; */
+  /* grid-column: 시작line이름 / 끝line이름; */
+  grid-column: first-line / fourth-line;
+  /* grid-row: 시작line이름 숫자 / 끝line이름 숫자; */
+  grid-row: sexy-line 1 / sexy-line 3;
+  /* line이름이 중복이면 뒤에 숫자를 붙여 구분하는데,
+  repeat 함수를 잘 보면 숫자가 1 모자라므로 -1을 해 줘야 한다.
+  grid-row: sexy-line 2 / sexy-line 4;로 작성하면 grid가 엉킨다. */
 }
 
 .nav {
