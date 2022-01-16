@@ -1,20 +1,18 @@
 .grid {
+  background-color: black;
+  color: white;
   display: grid;
-  gap: 10px;
+  gap: 5px;
   height: 50vh;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  /* align-items: center; justify-items: center;
-  place-items: center center; */
-  place-items: center;
-}
-
-.header,
-.content,
-.nav,
-.footer {
-  height: 50px;
-  width: 70px;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  /* justify-content: stretch; 셀 크기가 fr, auto일 때 적용
+  justify-content: start;
+  justify-content: center;
+  justify-content: end;
+  justify-content: space-around;
+  justify-content: space-between;
+  justify-content: space-evenly; IE에서 지원 안 함 */
 }
 
 .header {
