@@ -2,30 +2,30 @@
   display: grid;
   gap: 10px;
   height: 50vh;
-  grid-template:
-    "header header header header" 1fr
-    "content content content nav" 2fr
-    "footer footer footer footer" 1fr / repeat(4, 1fr);
-  /* "이름 이름 이름 이름" 높이 / 너비 너비 너비 너비; */
-  /* "footer footer footer footer" 1fr / 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  /* justify-items: stretch;
+  justify-items: start;
+  justify-items: center;
+  justify-items: end;
+  align-items: stretch;
+  align-items: start;
+  align-items: center;
+  align-items: end; */
 }
 
 .header {
   background-color: springgreen;
-  grid-area: header;
 }
 
 .content {
   background-color: deepskyblue;
-  grid-area: content;
 }
 
 .nav {
   background-color: mediumpurple;
-  grid-area: nav;
 }
 
 .footer {
   background-color: orange;
-  grid-area: footer;
 }
