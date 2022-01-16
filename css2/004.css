@@ -1,34 +1,30 @@
 .grid {
   display: grid;
   gap: 10px;
-  /* grid-template-columns: [line이름] 너비 ... [line이름] 너비; */
-  grid-template-columns: [first-line] 100px [second-line] 100px [third-line] 100px [fourth-line] 100px [fifth-line];
-  /* grid-template-rows: repeat(횟수, 너비 [line이름]); */
-  grid-template-rows: repeat(4, 100px [sexy-line]);
+  /* 높이는 화면의 50%로 지정함 */
+  height: 50vh;
+  /* fr은 fraction(grid 내에서 사용 가능한 공간)을 의미 */
+  grid-template-columns: repeat(4, 1fr);
+  /* height가 없을 때 fr, auto 등의 단위를 쓰면 높이가 증발함 */
+  grid-template-rows: repeat(4, 1fr);
 }
 
 .header {
   background-color: springgreen;
-  grid-column: span 4;
+  grid-area: header;
 }
 
 .content {
   background-color: deepskyblue;
-  /* grid-column: 시작line이름 / 끝line이름; */
-  grid-column: first-line / fourth-line;
-  /* grid-row: 시작line이름 숫자 / 끝line이름 숫자; */
-  grid-row: sexy-line 1 / sexy-line 3;
-  /* line이름이 중복이면 뒤에 숫자를 붙여 구분하는데,
-  repeat 함수를 잘 보면 숫자가 1 모자라므로 -1을 해 줘야 한다.
-  grid-row: sexy-line 2 / sexy-line 4;로 작성하면 grid가 엉킨다. */
+  grid-area: content;
 }
 
 .nav {
   background-color: mediumpurple;
-  grid-row: span 2;
+  grid-area: nav;
 }
 
 .footer {
   background-color: orange;
-  grid-column: span 4;
+  grid-area: footer;
 }
