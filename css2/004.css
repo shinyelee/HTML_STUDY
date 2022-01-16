@@ -3,16 +3,16 @@
   color: white;
   display: grid;
   gap: 5px;
-  height: 50vh;
+  height: 100vh;
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: repeat(4, 100px);
-  /* justify-content: stretch; 셀 크기가 fr, auto일 때 적용
-  justify-content: start;
-  justify-content: center;
-  justify-content: end;
+  /* align-content: stretch; 
+  align-content: start;
+  align-content: center;
+  align-content: end;
   justify-content: space-around;
-  justify-content: space-between;
-  justify-content: space-evenly; IE에서 지원 안 함 */
+  align-content: space-between;
+  align-content: space-evenly; */
 }
 
 .header {
