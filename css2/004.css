@@ -10,20 +10,28 @@
 
 .header {
   background-color: springgreen;
-  /* align-self: stretch; 기본값 */
+  /* align-self: stretch;와 justify-self: stretch;
+  -> 둘 다 기본값이므로 표기 안 해도 무방함 */
 }
 
 .content {
   background-color: deepskyblue;
+  /* align-self와 justify-self를 함께 쓸 수 있음 */
   align-self: start;
+  justify-self: center;
 }
 
 .nav {
   background-color: mediumpurple;
-  align-self: center;
+  /* place-self로 align-self와 justify-self를 축약함
+  place-self: align속성 justify속성; */
+  place-self: end start;
+  /* align-self: end; justify-self: start;와 동일 */
 }
 
 .footer {
   background-color: orange;
-  align-self: end;
+  /* place-self에서 똑같은 속성이 반복되면 한 번만 써도 됨 */
+  place-self: center;
+  /* place-self: center center;와 동일 */
 }
