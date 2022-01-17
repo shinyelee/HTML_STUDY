@@ -10,20 +10,20 @@
 
 .header {
   background-color: springgreen;
-  /* justify-self: stretch; 기본값 */
+  /* align-self: stretch; 기본값 */
 }
 
 .content {
   background-color: deepskyblue;
-  justify-self: start;
+  align-self: start;
 }
 
 .nav {
   background-color: mediumpurple;
-  justify-self: center;
+  align-self: center;
 }
 
 .footer {
   background-color: orange;
-  justify-self: end;
+  align-self: end;
 }
