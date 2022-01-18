@@ -6,32 +6,23 @@
   height: 100vh;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 100px);
+  /* align-content, justify-content, place-content,
+  align-items, justify-items, place-items 자리 */
 }
 
 .header {
   background-color: springgreen;
-  /* align-self: stretch;와 justify-self: stretch;
-  -> 둘 다 기본값이므로 표기 안 해도 무방함 */
+  /* align-self, justify-self, place-self 자리 */
 }
 
 .content {
   background-color: deepskyblue;
-  /* align-self와 justify-self를 함께 쓸 수 있음 */
-  align-self: start;
-  justify-self: center;
 }
 
 .nav {
   background-color: mediumpurple;
-  /* place-self로 align-self와 justify-self를 축약함
-  place-self: align속성 justify속성; */
-  place-self: end start;
-  /* align-self: end; justify-self: start;와 동일 */
 }
 
 .footer {
   background-color: orange;
-  /* place-self에서 똑같은 속성이 반복되면 한 번만 써도 됨 */
-  place-self: center;
-  /* place-self: center center;와 동일 */
 }
