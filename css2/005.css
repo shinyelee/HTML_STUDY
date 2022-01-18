@@ -1,19 +1,24 @@
 .grid {
-  background-color: black;
   color: white;
   display: grid;
   gap: 5px;
-  height: 50vh;
-  /* grid-template-columns: repeat(10, minmax(50px, 150px));
-  column의 너비가 최소 50px부터 최대 150px 사이로 설정됨 */
-  grid-template-columns: repeat(10, minmax(50px, 1fr));
-  grid-template-rows: repeat(4, 100px);
+  grid-auto-rows: 100px;
+  margin-bottom: 30px;
 }
 
 .item:nth-child(odd) {
   background-color: springgreen;
 }
-
 .item:nth-child(even) {
   background-color: deepskyblue;
+}
+
+.grid:first-child {
+  /* 화면 너비에 따라 자동으로 투명한 column을 생성함 */
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.grid:last-child {
+  /* 화면 너비에 따라 자동으로 column의 너비를 늘림 */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
