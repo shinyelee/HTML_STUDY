@@ -4,13 +4,10 @@
   display: grid;
   gap: 5px;
   height: 50vh;
-  grid-template-columns: repeat(4, 100px);
+  /* grid-template-columns: repeat(10, minmax(50px, 150px));
+  column의 너비가 최소 50px부터 최대 150px 사이로 설정됨 */
+  grid-template-columns: repeat(10, minmax(50px, 1fr));
   grid-template-rows: repeat(4, 100px);
-  /* grid-auto-rows: auto;는 기본값.
-  grid-auto-flow: row;도 기본값.
-  grid-auto-flow: column;과 grid-auto-columns는 함께 써야 한다. */
-  grid-auto-flow: column;
-  grid-auto-columns: 100px;
 }
 
 .item:nth-child(odd) {
