@@ -2,6 +2,9 @@
   color: white;
   display: grid;
   gap: 5px;
+  /* max-content는 내부 텍스트가 개행하지 않아도 될만큼의 공간을 확보.
+  min-content는 내부 텍스트의 가장 긴 단어 기준으로 공간 확보. */
+  grid-template-columns: max-content min-content;
   grid-auto-rows: 100px;
   margin-bottom: 30px;
 }
@@ -9,16 +12,11 @@
 .item:nth-child(odd) {
   background-color: springgreen;
 }
+
 .item:nth-child(even) {
   background-color: deepskyblue;
 }
 
-.grid:first-child {
-  /* 화면 너비에 따라 자동으로 투명한 column을 생성함 */
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-}
-
-.grid:last-child {
-  /* 화면 너비에 따라 자동으로 column의 너비를 늘림 */
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+body {
+  background-color: black;
 }
