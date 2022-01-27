@@ -1,30 +1,53 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   height: 100vh;
   width: 100%;
 }
+
 .header {
-  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 .header__cate {
-  border: 2px solid black;
   width: 20%;
-  padding: 10px;
+  height: 50px;
+  padding: 0 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.header__cate__text {
-  border: 1px solid green;
-}
-.header__cate__chev {
-  border: 1px solid yellow;
+  border: 2px solid black;
 }
 
-.main {
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-auto-rows: 400px;
+}
+.grid__box {
+  border-top: 0;
+  height: inherit;
+  border: 2px solid black;
+}
+.grid__box__content {
+  border: 1px solid blue;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+.grid__box__img {
   border: 1px solid red;
+  height: 70%;
+  width: 80%;
+}
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.underline {
+  text-decoration: underline;
 }
