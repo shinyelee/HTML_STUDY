@@ -28,18 +28,22 @@ body {
   grid-auto-rows: 400px;
 }
 .grid__box {
-  border-top: 0;
   height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 0;
   border: 2px solid black;
 }
 .grid__box__content {
-  border: 1px solid blue;
   height: 15%;
+  width: 100%;
+  padding: 0 20px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .grid__box__img {
-  border: 1px solid red;
   height: 70%;
   width: 80%;
 }
