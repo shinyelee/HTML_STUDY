@@ -15,9 +15,10 @@ body {
 }
 
 .orange {
-  border: 2px solid orangered;
-  color: orangered;
-  background-color: orangered;
+  width: 60%;
+  border: 2px solid red;
+  color: red;
+  background-color: red;
 }
 .section {
   height: 16.6vh;
@@ -31,7 +32,7 @@ body {
 .right2 {
   margin: 1px;
   padding: 10px;
-  background-color: orange;
+  background-color: #ff7400;
 }
 .left,
 .right1,
@@ -46,7 +47,7 @@ body {
 }
 .center {
   grid-area: 1 / 2 / 3 / 3;
-  font-size: 72px;
+  font-size: 64px;
 }
 .right1,
 .right2 {
@@ -61,39 +62,62 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 30px;
-  color: orange;
-  background-color: orangered;
+  color: #ff7400;
+  background-color: red;
 }
 
+.pinkblue {
+  width: 3%;
+}
 .section2 {
   display: grid;
   height: 100%;
-  position: relative;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
 }
 .pink,
 .blue {
-  padding: 15px;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
   writing-mode: vertical-lr;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
 }
 .pink {
   background-color: magenta;
 }
 .blue {
-  text-align: end;
+  justify-content: end;
   background-color: blue;
 }
-.flower {
-  position: absolute;
-  top: 49%;
-  left: 25%;
-}
 
-/* .red {
+.red {
+  width: 38%;
+  background-color: red;
+}
+.section3 {
   display: grid;
+  height: 100%;
+  grid-template-rows: 1fr 15fr;
+}
+.header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+}
+.main {
+  display: grid;
+  height: 100%;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr repeat(6, 2fr);
-} */
+  grid-template-rows: repeat(6, auto);
+}
+.news {
+  margin: 5px;
+  padding: 5px 0;
+  border-top: 1px solid black;
+}
+h1 {
+  font-size: 22px;
+}
