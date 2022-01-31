@@ -1,0 +1,142 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+* {
+  box-sizing: border-box;
+}
+main {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 0;
+  background-color: white;
+}
+article {
+  padding: 10px 0;
+}
+div {
+  border: 3px solid black;
+  background-color: white;
+}
+.div1 {
+  grid-column: span 3;
+  grid-row: span 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.div2 {
+  grid-column: span 3;
+  grid-row: span 8;
+}
+.div3 {
+  grid-column: span 3;
+  grid-row: span 8;
+}
+.div3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.div4 {
+  grid-column: span 3;
+  grid-row: span 4;
+}
+.div4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.div5 {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: gray;
+}
+.div6 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.div7 {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: black;
+}
+.div8 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.div9 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.div9 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.div10 {
+  grid-column: span 3;
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  background-color: blue;
+}
+.div11 {
+  grid-column: span 1;
+  grid-row: span 2;
+  background-color: black;
+}
+.div12 {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: yellow;
+}
+.div13 {
+  grid-column: span 4;
+  grid-row: span 2;
+}
+.div14 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  padding: 10px;
+}
+h1 {
+  padding-bottom: 40px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 32px;
+}
+h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  border-top: 1px solid black;
+}
+h4:last-child {
+  border-bottom: 1px solid black;
+}
+h4:hover {
+  background-color: gainsboro;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-weight: 600;
+}
