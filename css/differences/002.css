@@ -1,0 +1,36 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+div {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 28px;
+}
+
+.fixed {
+  background-color: mediumaquamarine;
+  position: fixed;
+  top: 0;
+}
+.sticky {
+  background-color: hotpink;
+  position: sticky;
+  top: 0;
+}
+.static {
+  background-color: dodgerblue;
+}
+
+.first {
+  background-color: mintcream;
+}
+.second {
+  background-color: mistyrose;
+}
+.third {
+  background-color: lightcyan;
+}
