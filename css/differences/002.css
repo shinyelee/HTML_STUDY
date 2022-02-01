@@ -26,11 +26,14 @@ div {
 }
 
 .first {
+  /* fixed의 부모 */
   background-color: mintcream;
 }
 .second {
+  /* sticky의 부모 */
   background-color: mistyrose;
 }
 .third {
+  /* static의 부모 */
   background-color: lightcyan;
 }
